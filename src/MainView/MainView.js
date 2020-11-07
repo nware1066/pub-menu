@@ -6,7 +6,7 @@ function MainView(props) {
   return (
     <section className='main-view'>
       <h1>Welcome to the pub</h1>
-      <button className='beer-button'></button>
+      <button className='beer-button' onClick={props.serveBeer}></button>
       <p>Click the button and get a beer</p>
     </section>
   )
