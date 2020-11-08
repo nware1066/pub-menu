@@ -10,13 +10,20 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      beer: {}
+      beer: {},
+      viewFood: false
     }
   }
 
   serveBeer = () => {
     formatBeers()
     .then(singleBeer => this.setState({beer: singleBeer}))
+  }
+
+  showFood = () => {
+    this.setState(state => ({
+      viewFood: !state.viewFood
+    }));
   }
 
   render() {
@@ -27,8 +34,11 @@ class App extends Component {
           <MainView serveBeer={this.serveBeer}/>
         </Route>
         <Route exact path='/beer'>
-          <SingleBeerView beer={this.state.beer} serveBeer={this.serveBeer} />
+          <SingleBeerView beer={this.state.beer} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} />
         </Route>
+        < Route exact path ='/food'>
+          <SingleBeerView beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} addToFavorites={this.addToFavorites}/>
+        </ Route>
         </header>
       </div>
     );
