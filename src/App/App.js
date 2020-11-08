@@ -2,6 +2,7 @@ import React,  { Component } from 'react';
 import { Route, Link} from 'react-router-dom';
 import MainView from '../MainView/MainView'
 import SingleBeerView from '../SingleBeerView/SingleBeerView'
+import FavoriteCard from '../FavoriteCard/FavoriteCard'
 import { getRandomBeer } from '../apiCalls.js';
 import { formatBeers } from '../cleanData.js';
 import './App.css';
