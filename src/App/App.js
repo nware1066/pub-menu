@@ -22,7 +22,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+        <Route exact path ='/'>
           <MainView serveBeer={this.serveBeer}/>
+        </Route>
+        <Route exact path='/beer'>
+          <SingleBeerView beer={this.state.beer} serveBeer={this.serveBeer} />
+        </Route>
         </header>
       </div>
     );
