@@ -11,7 +11,8 @@ class App extends Component {
     super()
     this.state = {
       beer: {},
-      viewFood: false
+      viewFood: false,
+      favorites: []
     }
   }
 
@@ -25,6 +26,10 @@ class App extends Component {
       viewFood: !state.viewFood
     }));
   }
+
+  addToFavorites = (beer) => {
+  this.state.favorites.push(beer)
+}
 
   render() {
     return (
