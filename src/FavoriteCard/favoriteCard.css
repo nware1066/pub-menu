@@ -6,7 +6,8 @@
 
 .favorite-name {
   font-size: 2em;
-  color: gold;
+  color: goldenrod;
+  text-shadow: black 1px 1px
 }
 
 .favorite-description {
