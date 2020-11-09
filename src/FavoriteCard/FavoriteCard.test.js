@@ -9,6 +9,7 @@ describe('FavoriteCard', () => {
   const mockFavorite = {
     name: 'beer1',
     description: 'beer1 description',
+    foods: ["food1", "food2", "food3"]
   }
 
   render(
@@ -16,6 +17,7 @@ describe('FavoriteCard', () => {
       <FavoriteCard
         name={mockFavorite.name}
         description={mockFavorite.description}
+        foods={mockFavorite.foods}
       />
     </ MemoryRouter>
   )
@@ -23,6 +25,7 @@ describe('FavoriteCard', () => {
   it('should render information about a selected beer', () => {
     expect(screen.getByText('beer1')).toBeInTheDocument()
     expect(screen.getByText('beer1 description')).toBeInTheDocument()
+    expect(screen.getByText('food1')).toBeInTheDocument()
 
   })
 })
