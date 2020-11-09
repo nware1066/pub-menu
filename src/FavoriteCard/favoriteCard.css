@@ -1,0 +1,16 @@
+.favorite-card {
+  box-sizing: border-box;
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+.favorite-name {
+  font-size: 2em;
+  color: gold;
+}
+
+.favorite-description {
+  font-size: 1em;
+  color: gold;
+}
+/*  */
