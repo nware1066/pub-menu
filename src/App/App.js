@@ -2,6 +2,7 @@ import React,  { Component } from 'react';
 import { Route, Link} from 'react-router-dom';
 import MainView from '../MainView/MainView'
 import SingleBeerView from '../SingleBeerView/SingleBeerView'
+import FavoriteContainer from '../FavoriteContainer/FavoriteContainer';
 import { getRandomBeer } from '../apiCalls.js';
 import { formatBeers } from '../cleanData.js';
 import './App.css';
@@ -11,7 +12,8 @@ class App extends Component {
     super()
     this.state = {
       beer: {},
-      viewFood: false
+      viewFood: false,
+      favorites: []
     }
   }
 
@@ -26,6 +28,10 @@ class App extends Component {
     }));
   }
 
+  addToFavorites = (beer) => {
+  this.state.favorites.push(beer)
+}
+
   render() {
     return (
       <div className="App">
@@ -39,6 +45,9 @@ class App extends Component {
         < Route exact path ='/food'>
           <SingleBeerView beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} addToFavorites={this.addToFavorites}/>
         </ Route>
+        <Route exact path='/favorites'>
+          <FavoriteContainer favorites={this.state.favorites} beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} />
+        </Route>
         </header>
       </div>
     );

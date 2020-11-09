@@ -3,7 +3,6 @@ import './foodPairingView.css'
 
 
 function FoodPairingView(props) {
-  console.log(props)
   let foodOption;
   if (props.foods) {
     foodOption = props.foods
