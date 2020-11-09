@@ -9,7 +9,9 @@ const FavoriteContainer = ({favorites}) => {
       <section className='favorite-container'>
         <>
           { favorites.map(favorite => {
-              return <FavoriteCard name={favorite.name} description={favorite.description} />
+              return <FavoriteCard
+              name={favorite.name}
+              description={favorite.description} />
             })
           }
         </>
