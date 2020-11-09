@@ -40,7 +40,11 @@ class App extends Component {
           <MainView serveBeer={this.serveBeer}/>
         </Route>
         <Route exact path='/beer'>
-          <SingleBeerView beer={this.state.beer} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} />
+          <SingleBeerView
+          beer={this.state.beer}
+          serveBeer={this.serveBeer}
+          showFood={this.showFood}
+          viewFood={this.state.viewFood} />
         </Route>
         < Route exact path ='/food'>
           <SingleBeerView beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} addToFavorites={this.addToFavorites}/>
