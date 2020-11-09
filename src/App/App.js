@@ -35,24 +35,34 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
         <Route exact path ='/'>
           <MainView serveBeer={this.serveBeer}/>
         </Route>
         <Route exact path='/beer'>
           <SingleBeerView
-          beer={this.state.beer}
-          serveBeer={this.serveBeer}
-          showFood={this.showFood}
-          viewFood={this.state.viewFood} />
+            beer={this.state.beer}
+            serveBeer={this.serveBeer}
+            showFood={this.showFood}
+            viewFood={this.state.viewFood} />
         </Route>
         < Route exact path ='/food'>
-          <SingleBeerView beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} addToFavorites={this.addToFavorites}/>
+          <SingleBeerView beer={this.state.beer}
+            foods={this.state.beer.foods}
+            serveBeer={this.serveBeer}
+            showFood={this.showFood}
+            viewFood={this.state.viewFood}
+            addToFavorites={this.addToFavorites}
+          />
         </ Route>
         <Route exact path='/favorites'>
-          <FavoriteContainer favorites={this.state.favorites} beer={this.state.beer} foods={this.state.beer.foods} serveBeer={this.serveBeer} showFood={this.showFood} viewFood={this.state.viewFood} />
+          <FavoriteContainer
+            favorites={this.state.favorites}
+            beer={this.state.beer}
+            foods={this.state.beer.foods}
+            serveBeer={this.serveBeer}
+            showFood={this.showFood}
+            viewFood={this.state.viewFood} />
         </Route>
-        </header>
       </div>
     );
   }
