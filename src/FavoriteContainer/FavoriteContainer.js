@@ -11,6 +11,7 @@ const FavoriteContainer = ({favorites}) => {
           { favorites.map(favorite => {
               return <FavoriteCard
               name={favorite.name}
+              foods={favorite.foods}
               description={favorite.description} />
             })
           }
