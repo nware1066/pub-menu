@@ -25,6 +25,8 @@ describe('SingleBeerView', () => {
       </MemoryRouter>
     )
     expect(screen.getByText("I don't want this one")).toBeInTheDocument()
+    userEvent.click(screen.getByText("I don't want this one"))
+    expect(mockServeBeer).toHaveBeenCalledTimes(1)
   })
 })
 //
