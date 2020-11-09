@@ -8,7 +8,7 @@ function FoodPairingView(props) {
     foodOption = props.foods
     return foodOption.map(food => {
       return (
-          foodOption = <p className='food-text'>{food} </p>
+          foodOption = <p className='food-text' key={`${props.id}-${food}`}>{food} </p>
       )
     })
     console.log(foodOption)
