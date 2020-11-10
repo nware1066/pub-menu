@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './foodPairingView.css'
 
 
@@ -11,7 +12,6 @@ function FoodPairingView(props) {
           foodOption = <p className='food-text' key={`${props.id}-${food}`}>{food} </p>
       )
     })
-    console.log(foodOption)
     } else {
       return ''
     }
@@ -19,3 +19,6 @@ function FoodPairingView(props) {
 
 
 export default FoodPairingView;
+FoodPairingView.propTypes = {
+  beer: PropTypes.object
+}
