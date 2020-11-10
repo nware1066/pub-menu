@@ -8,7 +8,7 @@ The learning goals for this project were to create an application from start to 
 
 ## Pub Menu in action
 
-![User selects beer, views food, adds to favorites and then views favorites] (https://media.giphy.com/media/GBmtBLn2fuUgrXV6QP/giphy.gif)
+![User selects beer, views food, adds to favorites and then views favorites](https://media.giphy.com/media/GBmtBLn2fuUgrXV6QP/giphy.gif)
 
 ### Built With
 * React
