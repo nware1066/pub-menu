@@ -1,6 +1,7 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import FoodPairingView from '../FoodPairingView/FoodPairingView'
+import PropTypes from 'prop-types';
 import './singleBeerView.css';
 
 function SingleBeerView(props) {
@@ -30,3 +31,11 @@ function SingleBeerView(props) {
 }
 
 export default SingleBeerView;
+SingleBeerView.propTypes = {
+  favorites: PropTypes.array,
+  beer: PropTypes.object,
+  foods: PropTypes.array,
+  serveBeer: PropTypes.func,
+  showFood: PropTypes.func,
+  viewFood: PropTypes.bool
+}
