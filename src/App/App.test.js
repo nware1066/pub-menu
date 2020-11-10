@@ -158,7 +158,7 @@ describe('App', () => {
     expect(beerDescription).toBeInTheDocument()
   })
 
-  it.only('Should allow user to select and view favorites', async () => {
+  it('Should allow user to select and view favorites', async () => {
 
     let newBeer = [
     {
@@ -287,12 +287,16 @@ describe('App', () => {
     fireEvent.click(beerButton)
     let foodButton = await waitFor(() => screen.getByRole('button', { name: /sounds great! show me some food that goes with this!/i }))
     fireEvent.click(foodButton)
-    screen.debug()
     let favoriteButton = screen.getByRole('button', { name: /add to favorites/i })
     let favoriteViewButton = screen.getByRole('button', { name: /show me my favorites/i })
     fireEvent.click(favoriteButton)
     fireEvent.click(favoriteViewButton)
     expect(screen.getByText("Kingpin")).toBeInTheDocument()
+    let homeButton = screen.getByText("Take Me Back")
+    expect(homeButton).toBeInTheDocument()
+    fireEvent.click(homeButton)
+    screen.debug()
+    expect(screen.getByText("Welcome to the pub")).toBeInTheDocument()
 
   })
 })
