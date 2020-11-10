@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import FoodPairingView from '../FoodPairingView/FoodPairingView';
+import PropTypes from 'prop-types';
 import './favoriteCard.css';
 
-const FavoriteCard = ({name, description, foods}) => {
+const FavoriteCard = ({id, name, description, foods}) => {
 
   return (
     <article className='favorite-card'>
@@ -15,3 +15,10 @@ const FavoriteCard = ({name, description, foods}) => {
 }
 
 export default FavoriteCard;
+
+FavoriteCard.propTypes = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  foods: PropTypes.array
+}
