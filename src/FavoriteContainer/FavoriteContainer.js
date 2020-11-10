@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import FavoriteCard from '../FavoriteCard/FavoriteCard';
 import './favoriteContainer.css';
@@ -14,6 +15,7 @@ const FavoriteContainer = ({favorites}) => {
               description={favorite.description} />
             })
           }
+          <Link to='/'><button className='home-button'>Take Me Back</button></Link>
       </section>
   )
 }
