@@ -5,6 +5,7 @@ import SingleBeerView from '../SingleBeerView/SingleBeerView'
 import FavoriteContainer from '../FavoriteContainer/FavoriteContainer';
 import { getRandomBeer } from '../apiCalls.js';
 import { formatBeers } from '../cleanData.js';
+import PropTypes from 'prop-types';
 import './App.css';
 
 class App extends Component {
@@ -69,3 +70,11 @@ class App extends Component {
 }
 
 export default App;
+App.propTypes = {
+  beer: PropTypes.object,
+  favorites: PropTypes.array,
+  viewFood: PropTypes.bool,
+  serveBeer: PropTypes.func,
+  showFood: PropTypes.func,
+  addToFavorites: PropTypes.func
+}
