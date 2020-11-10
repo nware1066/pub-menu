@@ -29,9 +29,11 @@ describe('FavoriteContainer', () => {
     ]
 
     render(
-      <FavoriteContainer
-        favorites={mockFavorites}
-      />
+      <MemoryRouter>
+        <FavoriteContainer
+          favorites={mockFavorites}
+        />
+      </MemoryRouter>
     )
     expect(screen.getByText("beer1")).toBeInTheDocument()
     expect(screen.getByText("beer2")).toBeInTheDocument()
