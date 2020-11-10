@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './mainView.css';
 
 function MainView(props) {
@@ -13,4 +14,6 @@ function MainView(props) {
 }
 
 export default MainView;
-//
+MainView.propTypes = {
+  serveBeer: PropTypes.func
+}
