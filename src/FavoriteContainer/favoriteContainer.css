@@ -3,3 +3,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3em;
 }
+.home-button {
+  margin-top: 4em;
+  hieght: 3em;
+  width: 15em;
+  background-color: goldenrod;
+}

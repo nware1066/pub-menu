@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## About the project
+
+Pub Menu is an application that allows a user to see information about a single beer, and if they wish to, to see foods that will go well with that beer. The user can view additional beers, and can add any that they like to a favorite list. the favorite list can be viewed if the user wishes.
+
+This was a solo project assigned during the third module of the Front-End Program at the Turing School of Software and Design. I was tasked with selecting an API, utilizing the React Library, the Jest testing Library, and using React Router to give the user a multi-page experience.
+
+The learning goals for this project were to create an application from start to finish without specific instructions as to what the functionality should be, to demonstrate knoweldge of React, Router and Asynchronous JavaScript and to incorporate data from an API that we chose.
+
+## Pub Menu in action
+
+![User selects beer, views food, adds to favorites and then views favorites] (https://media.giphy.com/media/GBmtBLn2fuUgrXV6QP/giphy.gif)
+
+### Built With
+* React
+* JavaScript
+* CSS/HTML
+* React Router
+* Jest
+
+
+## Successes:
+  I was particularly pleased to get the integration test set up and passing. I normally find working independtly much more difficult than paired programming, but this app came together pretty easily working on my own, which is a bit win for me.
+
+## Challenges:
+  The project was assigned over a particularly stressful election, and I found focussing on the work to be a definite challenge. This was the first time that I have used integration testing, and it did take some time to figure that out.
+
+## Next Steps
+I would have liked to have sad path testing accomplished, and there are definitely some bugs that I would like to have addressed, if I had more time. The app allows multiple instances of the same item in favorites, and does not function properly using the back arrow buttons. All of those things need to be addressed to allow for a properly functional app.
+I will also need to complete styling in several areas. The styling was only accomplished to a very basic level needed for the user to interact with the app.
+
+### Installation:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+In your terminal:
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repo: `git clone git@github.com:aemcdonald/bibliogoal.git`
+2. Install NPM packages- npm install
+3. Start application- npm start
